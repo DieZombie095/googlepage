@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clon de la página principal de Google creado con HTML, CSS y JavaScript.">
+  <title>Google</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav aria-label="Navegación principal">
+      <a href="https://mail.google.com/">Gmail</a>
+      <a href="https://www.google.com/imghp">Imágenes</a>
+      <button class="apps-button" type="button" aria-label="Aplicaciones de Google" title="Aplicaciones de Google">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </button>
+      <a class="sign-in" href="https://accounts.google.com/">Iniciar sesión</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="google-logo" aria-label="Google">
+      <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+    </div>
+
+    <form class="search-form" id="searchForm" role="search">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+        <input id="searchInput" type="search" aria-label="Buscar" autocomplete="off" spellcheck="false">
+        <button class="clear-button" id="clearButton" type="button" aria-label="Borrar búsqueda" title="Borrar">×</button>
+      </div>
+      <div class="actions">
+        <button type="submit">Buscar con Google</button>
+        <button type="button" id="luckyButton">Me siento con suerte</button>
+      </div>
+    </form>
+    <p class="language">Ofrecido por Google en: <a href="https://www.google.com/">Español (Latinoamérica)</a></p>
+  </main>
+
+  <footer class="footer">
+    <div class="country">México</div>
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="https://about.google/">Sobre Google</a>
+        <a href="https://ads.google.com/">Publicidad</a>
+        <a href="https://www.google.com/intl/es-419/business/">Negocios</a>
+        <a href="https://www.google.com/search/howsearchworks/">Cómo funciona la búsqueda</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://policies.google.com/privacy">Privacidad</a>
+        <a href="https://policies.google.com/terms">Condiciones</a>
+        <a href="https://www.google.com/preferences">Preferencias</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
